@@ -17,3 +17,11 @@ test('Updates by next timer', () => {
   act(() => jest.advanceTimersToNextTimer())
   expect(result.current).toBe(1)
 })
+
+test('Updates by next timer after tiny delay', () => {
+  const {result} = renderHook(() => useCounter(100))
+
+  act(() => jest.advanceTimersByTime(1))
+  act(() => jest.advanceTimersToNextTimer())
+  expect(result.current).toBe(1)
+})
