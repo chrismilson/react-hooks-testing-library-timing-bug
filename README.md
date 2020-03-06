@@ -1,9 +1,5 @@
 ## Usage
 
 ```
-yarn install
-```
-
-```
-yarn test
+yarn install && yarn test
 ```
