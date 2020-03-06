@@ -23,8 +23,8 @@ test('Updates by next timer', () => {
 test('Updates by next timer after awaiting next update', async () => {
   const {result, waitForNextUpdate} = renderHook(() => useCounter(100))
 
-  await waitForNextUpdate()
   act(() => jest.advanceTimersToNextTimer())
+  await waitForNextUpdate()
 
   expect(result.current).toBe(1)
 })
