@@ -1,6 +1,7 @@
 {
-  "name": "react-hooks-testing-library-bug",
+  "name": "react-hooks-testing-library-timing-bug",
   "version": "1.0.0",
+  "description": "A demo of a timing bug in react-hooks-testing library",
   "scripts": {
     "test": "jest"
   },
