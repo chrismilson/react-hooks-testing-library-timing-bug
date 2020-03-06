@@ -8,7 +8,7 @@ export default function useCounter(delay: number) {
       setCount(count => count + 1)
     }, delay)
     return () => clearInterval(interval)
-  }, [])
+  }, [delay])
 
   return count
 }
