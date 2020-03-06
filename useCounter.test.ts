@@ -29,7 +29,7 @@ test('Updates by next timer after awaiting next update', async () => {
   expect(result.current).toBe(1)
 })
 
-test('Update by next timer inside setImmediate', async () => {
+test('Updates by next timer inside setImmediate', async () => {
   const { result, waitForNextUpdate } = renderHook(() => useCounter(100))
 
   setImmediate(() => {
